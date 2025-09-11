@@ -117,12 +117,11 @@ public class Main {
         // que indique si tiene descuento. Si la variable booleana es verdadera, aplica un 10% de descuento
         // y muestra el precio final.
 
-
         int productPrice = 45;
-        boolean hasDescount = true;
+        boolean hasDiscount = true;
 
-        if (hasDescount) {
-            System.out.print("El producto tiene descuento, precio total: " + ((productPrice * 100) * 0.1));
+        if (hasDiscount) {
+            System.out.print("El producto tiene descuento, precio total: " + productPrice  * 0.90);
         } else {
             System.out.print("El producto no tiene descuento, precio total: " + productPrice);
         }
