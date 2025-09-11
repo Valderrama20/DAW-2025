@@ -5,10 +5,20 @@ public class Main {
         // 1. Declara una variable saldo y otra booleana que indique si la persona está habilitada para
         // realizar la transacción. Muestra 'Puede hacerla' si tiene saldo y además está habilitada
 
-        int balance
+        double balance = 100.0;
+        boolean isEnabled = true;
+
+        if(isEnabled && balance > 0) {
+          System.out.println("Puede hacer la transferencia, saldo: " + balance + ", habilitado: " + isEnabled);
+          System.out.printf("Puede hacer la transferencia, saldo: %.2f%n, habilitado: %", balance);
+        }
 
         // 2. Aprobación con condiciones: Declara una variable con la nota y otra booleana que indique si
         // asistió a clases. Muestra 'Aprobado' solo si la nota es mayor o igual a 60 y asistió a clases.
+
+
+
+
         //  3. Rango válido: Declara una variable entera. Verifica si está entre 50 y 100 inclusive. Muestra
         // 'Dentro del rango' o 'Fuera del rango'.
         // 4. Usuario y contraseña: Declara dos variables String, una para usuario y otra para contraseña. Si
