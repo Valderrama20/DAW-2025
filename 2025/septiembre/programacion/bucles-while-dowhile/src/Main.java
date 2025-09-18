@@ -95,33 +95,67 @@ public class Main {
 //        7 7. Menú repetitivo (do-while): Muestra un menú simple con opciones hasta que el usuario elija
 //        salir.
 
-          boolean exit = false;
-
-          do {
-              System.out.println("Ingresa un numero: ");
-              System.out.println("Menu");
-              System.out.println("1. Comprar");
-              System.out.println("2. Vender");
-              System.out.println("3. Alquilar");
-              System.out.println("0. Salir");
-
-              int userSelect = sc.nextInt();
-              if(userSelect == 0) {
-                  exit = true;
-              }
-
-
-          } while (!exit);
+//          boolean exit = false;
+//
+//          do {
+//              System.out.println("Ingresa un numero: ");
+//              System.out.println("Menu");
+//              System.out.println("1. Comprar");
+//              System.out.println("2. Vender");
+//              System.out.println("3. Alquilar");
+//              System.out.println("0. Salir");
+//
+//              int userSelect = sc.nextInt();
+//              if(userSelect == 0) {
+//                  exit = true;
+//              }
+//
+//
+//          } while (!exit);
 
 //        8 8. Suma hasta cero (do-while): Ingresa números y súmalos hasta que se ingrese un cero.
 
-         boolean isZero = false;
-         int count = 0;
-         do {
-             System.out.println();
-         } while (!isZero);
+//         boolean isZero = false;
+//         int count = 0;
+//         do {
+//             System.out.println("Ingresa un numero para sumar: ");
+//             int userInputNumber = sc.nextInt();
+//             if(userInputNumber == 0){
+//                 System.out.println("Ingresaste un cero, programa terminado");
+//                 isZero = true;
+//             } else {
+//                 System.out.println(count + " + " + userInputNumber + " = " + (count + userInputNumber));
+//                 count += userInputNumber;
+//             }
+//         } while (!isZero);
 
 //        9 9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
+
+//          String correctPassword = "1234";
+//
+//          while (true) {
+//              System.out.println("Ingresa tu constraseña");
+//              String userInputPasssword = sc.nextLine();
+//
+//              if (correctPassword.equals(userInputPasssword)) {
+//                  System.out.println("Constraseña correcta");
+//                  break;
+//              } else {
+//                  System.out.println("Contraseña incorrecta. Vuelve a intentar");
+//              }
+//          }
+//
 //        10 10. Números impares (for): Ingresa un número N y muestra los impares desde 1 hasta N.
+
+//        System.out.println("Ingresa un numero para ver los impares hasta el: ");
+//        int userInputNumber = sc.nextInt();
+//
+//        for (int i = 1; i <= userInputNumber; i++) {
+//            if(i % 2 != 0) {
+//                System.out.println(i);
+//            }
+//        }
+
+
     }
 }
