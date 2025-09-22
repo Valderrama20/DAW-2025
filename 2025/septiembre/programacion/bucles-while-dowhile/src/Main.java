@@ -131,19 +131,19 @@ public class Main {
 
 //        9 9. Validar contraseña (while): Pide una contraseña hasta que el usuario escriba la correcta.
 
-//          String correctPassword = "1234";
-//
-//          while (true) {
-//              System.out.println("Ingresa tu constraseña");
-//              String userInputPasssword = sc.nextLine();
-//
-//              if (correctPassword.equals(userInputPasssword)) {
-//                  System.out.println("Constraseña correcta");
-//                  break;
-//              } else {
-//                  System.out.println("Contraseña incorrecta. Vuelve a intentar");
-//              }
-//          }
+          String correctPassword = "1234";
+
+          while (true) {
+              System.out.println("Ingresa tu constraseña");
+              String userInputPasssword = sc.nextLine();
+
+              if (correctPassword.equals(userInputPasssword)) {
+                  System.out.println("Constraseña correcta");
+                  break;
+              } else {
+                  System.out.println("Contraseña incorrecta. Vuelve a intentar");
+              }
+          }
 //
 //        10 10. Números impares (for): Ingresa un número N y muestra los impares desde 1 hasta N.
 
