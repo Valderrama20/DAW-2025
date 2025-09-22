@@ -17,6 +17,15 @@ public class Main {
 
         // Ejercicio 5
         System.out.println("Resultado de suma de sensores: " + calculateSensors(24, 10));
+
+        // Ejercicio 6
+        isSafeSpeed(80);
+
+        // Ejercicio 7
+        executeMove(2);
+
+        // Ejercicio 9
+        System.out.println("Valor minimo: " + minValue(10, 20, 1));
     }
 
 //    1. Crea una función que muestre por pantalla 'Robot inicializado'. Llama a la función desde el main.
@@ -55,14 +64,36 @@ public class Main {
 //    6. Crea una función que reciba la velocidad de un motor y muestre si es segura (<100) o peligrosa
 //    (>=100).
 
-
+      public static void isSafeSpeed(int speed) {
+        if(speed < 100) {
+            System.out.println("La velocidad es segura, velocidad actual: " + speed);
+        } else {
+            System.out.println("La velocidad no es segura, velocidad actual: " + speed);
+        }
+      }
 
 //    7. Crea una función que reciba un número N y en un bucle muestre 'Movimiento ejecutado' N
 //    veces.
+
+      public static void executeMove(int numberMovements) {
+        int executedMove = 0;
+        while (executedMove < numberMovements) {
+            System.out.println("Movimiento ejecutado");
+            executedMove++;
+        }
+      }
+
 //    8. Crea una función que reciba una temperatura y muestre si el robot debe enfriarse (>40 grados) o
 //    seguir funcionando.
+
 //    9. Crea una función que reciba tres lecturas de un sensor de distancia y devuelva la más pequeña
 //    (mínima).
+
+      public static int minValue(int value1, int value2, int value3 ) {
+        int min1 = Math.min(value1, value2);
+        return Math.min(min1, value3);
+      }
+
 //    10. Crea una función que reciba un número N y, usando un bucle, simule que el robot da N pasos,
 //    mostrando cada paso.
 }
